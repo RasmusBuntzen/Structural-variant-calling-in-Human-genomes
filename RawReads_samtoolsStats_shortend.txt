@@ -1,0 +1,46 @@
+# This file was produced by samtools stats (1.15+htslib-1.15) and can be plotted using plot-bamstats
+# This file contains statistics for all reads.
+# The command line was:  stats --threads 100 /binf-isilon/sgarglab/people/rasmusab/data/whole_genome/all_fastq/mergede.fastq
+# CHK, Checksum	[2]Read Names	[3]Sequences	[4]Qualities
+# CHK, CRC32 of reads which passed filtering followed by addition (32bit overflow)
+CHK	e8e7d8a7	a18d7b9b	0e51e62e
+# Summary Numbers. Use `grep ^SN | cut -f 2-` to extract this part.
+SN	raw total sequences:	18125024	# excluding supplementary and secondary reads
+SN	filtered sequences:	0
+SN	sequences:	18125024
+SN	is sorted:	1
+SN	1st fragments:	18125024
+SN	last fragments:	0
+SN	reads mapped:	0
+SN	reads mapped and paired:	0	# paired-end technology bit set + both mates mapped
+SN	reads unmapped:	18125024
+SN	reads properly paired:	0	# proper-pair bit set
+SN	reads paired:	0	# paired-end technology bit set
+SN	reads duplicated:	0	# PCR or optical duplicate bit set
+SN	reads MQ0:	0	# mapped and MQ=0
+SN	reads QC failed:	0
+SN	non-primary alignments:	0
+SN	supplementary alignments:	0
+SN	total length:	224040282732	# ignores clipping
+SN	total first fragment length:	224040282732	# ignores clipping
+SN	total last fragment length:	0	# ignores clipping
+SN	bases mapped:	0	# ignores clipping
+SN	bases mapped (cigar):	0	# more accurate
+SN	bases trimmed:	0
+SN	bases duplicated:	0
+SN	mismatches:	0	# from NM fields
+SN	error rate:	0.000000e+00	# mismatches / bases mapped (cigar)
+SN	average length:	12360
+SN	average first fragment length:	12361
+SN	average last fragment length:	0
+SN	maximum length:	314548
+SN	maximum first fragment length:	314548
+SN	maximum last fragment length:	0
+SN	average quality:	33.3
+SN	insert size average:	0.0
+SN	insert size standard deviation:	0.0
+SN	inward oriented pairs:	0
+SN	outward oriented pairs:	0
+SN	pairs with other orientation:	0
+SN	pairs on different chromosomes:	0
+SN	percentage of properly paired reads (%):	0.0
