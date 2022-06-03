@@ -4,14 +4,13 @@ Supplementary data for Rasmus Alex Buntzen-Christensens' Bachelor in Biology, Un
 # Quality control raw sequencing reads output files
 ## FastQC
 [Raw reads fastQC](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/d61917a1b2110432199c7ec07c749a649a92cbeb/RawReads_fastqc.html)
-
-## pycoQC
+## PycoQC
 [Raw reads pycoQC](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/a9c3dab55bb0e8c7fa6c64927a414267076f8f87/RawReads_pycoQC.zip)
-
 ## SAMtools 
 OBS. this file has been shortend for memory reasons, if the full file is needed please contact me. All individual Phred scores are cut out. <br />
 [Raw reads SAMtools Stats](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/35c1a3c51a9eb80cea055190ab57c02b5809277b/RawReads_samtoolsStats_shortend.txt)
-
+## SEQkit
+[Raw reads SEQkit](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/ccdc58080099476bbddcf77430ca141b9e120d34/RawReads_seqkit.txt)
 # Quality Control of Shasta runs
 ## De Novo assembly
 ### Shasta run 1
