@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)https://s3.us-west-2.amazonaws.com/czi.paolo-public/HG002-Guppy-5.0.7-UL-run6/AssemblySummary.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Shasta assembler</title>
+<style>
+    body {
+        font-family: Arial;
+    }
+    pre {
+        font-family: courier;
+    }
+    p, input {
+        font-size: 16px;
+    }
+    h1, h2, h3 {
+        color: DarkSlateBlue;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #b8b5c7d9;
+        padding: 2px;
+    }
+    th {
+        font-weight: bold;
+        text-align: center;
+    }
+    th.left {
+        text-align: left;
+    }
+    td.centered {
+        text-align: center;
+    }
+    td.right {
+        text-align: right;
+    }
+    td.smaller {
+        font-size: smaller;
+    }
+    a {
+        color: DarkSlateBlue;
+    }
+    ul.navigationMenu {
+        list-style-type: none;
+        margin: 0px 0px 12px 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #404040;
+    }
+    
+    div.navigationButton {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        // min-width: 120px;
+    }
+    
+    .navigationMenuEntry:hover .navigationButton {
+        background-color: black;
+    }
+    
+    li.navigationMenuEntry {
+        display: inline-block;
+    }
+    
+    .navigationItems {
+        display: none;
+        position: absolute;
+        background-color: DodgerBlue;
+        // min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    a.navigationItem {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .navigationItems a:hover {background-color: SteelBlue}
+    
+    .navigationMenuEntry:hover .navigationItems {
+        display: block;
+    }
+
+    input[type=submit] {
+        background-color: #89bef2;
+        padding: 4px;
+        margin: 2px;
+        border-radius: 8px;
+    }
+
+    input[type=button] {
+        padding: 4px;
+    }
+
+    input[type=text], input[type=radio] {
+        background-color: #ecf1f0;
+        border-width: thin;
+    }
+
+    button {
+        background-color: #89bef2;
+        padding: 4px;
+        margin: 2px;
+        border-radius: 8px;
+    }
+
+</style>
+    
+    <script>
+
+    // Copy to the clipboard the table that generated the event.
+    function copyToClipboard(event)
+    {
+        // If the CTRL key is not pressed, don't do anything.
+        if(!event.ctrlKey) {
+            return;
+        }
+
+        // Prevent default behavior.
+        // event.preventDefault();
+        // event.stopPropagation();
+        // event.returnValue = false;
+        
+        // Get the table element.
+        var element = event.currentTarget;
+         
+        // Remove any previous selection.
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        
+        // Select the table.
+        var range = document.createRange();
+        range.selectNodeContents(element);
+        selection.addRange(range);
+        
+        // Copy it to the clipboard.
+        document.execCommand("copy");
+
+        // Unselect it.
+        selection.removeAllRanges();
+
+        window.alert("The table was copied to the clipboard");
+    }
+
+    // Make a table copyable by Ctrl-click.
+    function makeCopyable(element)
+    {
+        element.addEventListener('click', copyToClipboard);
+        element.title = 'Ctrl-click anywhere on the table to copy the entire table to the clipboard';
+    }
+
+    // Make all tables copyable by Ctrl-click.
+    function makeAllTablesCopyable()
+    {
+        var tables = document.getElementsByTagName('table');
+        var i;
+        for(i=0; i<tables.length; i++) {
+            makeCopyable(tables[i]);
+        }
+    }
+    </script>
+    </head><body onload="makeAllTablesCopyable()"><h1>Shasta assembly summary</h1><h3>Shasta version</h3>Shasta development build. This is not a released version.<h3>Reads used in this assembly</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Minimum read length</td><td class="right">35000</td></tr><tr><td>Number of reads</td><td class="right">2393403</td></tr><tr><td>Number of raw sequence bases</td><td class="right">185946324586</td></tr><tr><td>Average read length (for raw read sequence)</td><td class="right">77691</td></tr><tr><td>Read N50 (for raw read sequence)</td><td class="right">84100</td></tr><tr><td>Number of run-length encoded bases</td><td class="right">130604084164</td></tr><tr><td>Average length ratio of run-length encoded sequence over raw sequence</td><td class="right">0.7024</td></tr><tr><td>Number of reads flagged as palindromic by self alignment</td><td class="right">5799</td></tr><tr><td>Number of reads flagged as chimeric</td><td class="right">15010</td></tr></tbody></table><ul><li>Here and elsewhere, "raw" refers to the original read sequence, as opposed to run-length encoded sequence.</li><li>Reads discarded on input are not included in the above table (see <a href="https://s3.us-west-2.amazonaws.com/czi.paolo-public/HG002-Guppy-5.0.7-UL-run6/AssemblySummary.html#discarded">below</a>).</li><li>See ReadLengthHistogram.csv and Binned-ReadLengthHistogram.csv for details of the read length distribution of reads used in this assembly.</li></ul><h3 id="discarded">Reads discarded on input</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><th></th><th>Reads</th><th>Bases</th></tr><tr><td>Reads discarded on input because they contained invalid bases</td><td class="right">0</td><td class="right">0</td></tr><tr><td>Reads discarded on input because they were too short</td><td class="right">12752440</td><td class="right">94946574145</td></tr><tr><td>Reads discarded on input because they contained repeat counts greater than 255</td><td class="right">9604</td><td class="right">1012865868</td></tr><tr><td>Reads discarded on input because they had quality scores indicative of palindromic sequence</td><td class="right">0</td><td class="right">0</td></tr><tr><td>Reads discarded on input, total</td><td class="right">12762044</td><td class="right">95959440013</td></tr><tr><td>Fraction of reads discarded on input over total present in input files</td><td class="right">0.8421</td><td class="right">0.3404</td></tr></tbody></table><ul><li>Base counts in the above table are raw sequence bases.</li><li>Here and elsewhere, "raw" refers to the original read sequence, as opposed to run-length encoded sequence.</li></ul><h3>Marker <i>k</i>-mers</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Length <i>k</i> of <i>k</i>-mers used as markers</td><td class="right">14</td></tr><tr><td>Total number of <i>k</i>-mers</td><td class="right">6377292</td></tr><tr><td>Number of <i>k</i>-mers used as markers</td><td class="right">638031</td></tr><tr><td>Fraction of <i>k</i>-mers used as markers</td><td class="right">0.1</td></tr></tbody></table><ul><li>In the above table, all <i>k</i>-mer counts only include run-length encoded <i>k</i>-mers, that is, <i>k</i>-mers without repeated bases.</li></ul><h3>Markers</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Total number of markers on all reads, one strand</td><td class="right">13179757594</td></tr><tr><td>Total number of markers on all reads, both strands</td><td class="right">26359515188</td></tr><tr><td>Average number of markers per raw base</td><td class="right">0.07088</td></tr><tr><td>Average number of markers per run-length encoded base</td><td class="right">0.1009</td></tr><tr><td>Average base offset between markers in raw sequence</td><td class="right">14.11</td></tr><tr><td>Average base offset between markers in run-length encoded sequence</td><td class="right">9.909</td></tr><tr><td>Average base gap between markers in run-length encoded sequence</td><td class="right">-4.091</td></tr></tbody></table><ul><li>Here and elsewhere, "raw" refers to the original read sequence, as opposed to run-length encoded sequence.</li></ul><h3>Alignments</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Number of alignment candidates found by the LowHash algorithm</td><td class="right">143098512</td></tr><tr><td>Number of good alignments</td><td class="right">61116969</td></tr><tr><td>Number of good alignments kept in the read graph</td><td class="right">21205316</td></tr></tbody></table><h3>Read graph</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Number of vertices</td><td class="right">4786806</td></tr><tr><td>Number of edges</td><td class="right">42410632</td></tr></tbody></table><ul><li>The read graph contains both strands. Each read generates two vertices.</li><li>Isolated reads in the read graph don't contribute to the assembly. See the table below for a summary of isolated reads in the read graph. Each isolated read corresponds to two isolated vertices in the read graph, one for each strand.</li></ul><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><th></th><th>Reads</th><th>Bases</th></tr><tr><td>Isolated reads</td><td class="centered">245541</td><td class="centered">15841808062</td></tr><tr><td>Non-isolated reads</td><td class="centered">2147862</td><td class="centered">170104516524</td></tr><tr><td>Isolated reads fraction</td><td class="centered">0.1026</td><td class="centered">0.0852</td></tr><tr><td>Non-isolated reads fraction</td><td class="centered">0.8974</td><td class="centered">0.9148</td></tr></tbody></table><h3>Marker graph</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Total number of vertices</td><td class="right">417065290</td></tr><tr><td>Total number of edges</td><td class="right">423009754</td></tr><tr><td>Number of vertices that are not isolated after edge removal</td><td class="right">0</td></tr><tr><td>Number of edges that were not removed</td><td class="right">0</td></tr></tbody></table><ul><li>The marker graph contains both strands.</li></ul><h3>Assembled segments ("contigs")</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Number of segments assembled</td><td class="right">0</td></tr><tr><td>Total assembled segment length</td><td class="right">0</td></tr><tr><td>Longest assembled segment length</td><td class="right">0</td></tr><tr><td>Assembled segments N<sub>50</sub></td><td class="right">0</td></tr></tbody></table><ul><li>Shasta uses GFA terminology (<i>segment</i> instead of the most common <i>contig</i>). A contiguous section of assembled sequence can consist of multiple segments, for example in the presence of heterozygous bubbles.</li><li>See AssemblySummary.csv for lengths of assembled segments.</li></ul><h3>Performance</h3><table title="Ctrl-click anywhere on the table to copy the entire table to the clipboard"><tbody><tr><td>Elapsed time (seconds)</td><td class="right">1.955e+04</td></tr><tr><td>Elapsed time (minutes)</td><td class="right">325.8</td></tr><tr><td>Elapsed time (hours)</td><td class="right">5.431</td></tr><tr><td>Average CPU utilization</td><td class="right">0.4287</td></tr><tr><td>Peak Memory utilization (bytes)</td><td class="right">1326133346304</td></tr></tbody></table><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.3815141785978666', methodName, methodArgs }, 'https://s3.us-west-2.amazonaws.com');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>
