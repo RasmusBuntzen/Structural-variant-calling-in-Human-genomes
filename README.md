@@ -15,10 +15,16 @@ OBS. this file has been shortend for memory reasons, if the full file is needed 
 # Quality Control of Shasta runs
 ## De Novo assembly
 ### Shasta run 1
-[Shast Run 1](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run1.html)
+[Shast Run 1 QUAST report](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run1.html)<br />
+[Shast Run 1 summary](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/3fbea555de650261dff7b9b9735e8b711c81f7d2/AssemblySummary_Run1.html)
 ### Shasta run 2
-[Shast Run 2](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run2.html)
+[Shast Run 2 QUAST report](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run2.html)<br />
+[Shast Run 2 summary](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/3fbea555de650261dff7b9b9735e8b711c81f7d2/AssemblySummary_Run2.html)<br />
+[Hash Bucket population](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/d3aa0111e4b23343b94730e6dc911290c079dfad/LowHashBucketHistogram.csv)
 ### Shasta run 3
-[Shast Run 3](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run3.html)
+[Shast Run 3 QUAST report](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/2c883bd4dda96bd6ec4f904cc9ea484374e6bdd0/Shasta_Run3.html)<br />
+[Shast Run 3 summary](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/3fbea555de650261dff7b9b9735e8b711c81f7d2/AssemblySummary_Run3.html)
 ## Ultra-long reads assembly
-[Ultra long reads assembly](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/f1920eb29cb1b141b63f52d0215ce25d5babf542/UltraLongReads.html)
+[Ultra long reads QUAST report](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/f1920eb29cb1b141b63f52d0215ce25d5babf542/UltraLongReads.html)<br />
+[Ultra Long reads summary](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/0b98a6f604056ee2ec3624236d083b4bb1dc7037/AssemblySummary_UltraLongReads.html)
+# Quality Control of Genome Mapping
