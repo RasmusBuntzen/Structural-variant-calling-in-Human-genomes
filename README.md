@@ -27,3 +27,9 @@ OBS. this file has been shortend for memory reasons, if the full file is needed 
 [Ultra long reads QUAST report](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/f1920eb29cb1b141b63f52d0215ce25d5babf542/UltraLongReads.html)<br />
 [Ultra Long reads summary](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/0b98a6f604056ee2ec3624236d083b4bb1dc7037/AssemblySummary_UltraLongReads.html)
 # Quality Control of Genome Mapping
+## De Novo assembly
+[Flag stats for genome mapping](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/cc81b6d55de1b48b51fa1f9a36b82dd0d164ed2e/DeNovo_flagstats.txt)
+## Ultra-long reads assembly
+[Flag stats for genome mapping](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/main/UltraLOngReads_flagstats.txt)
+## Reference based assembly
+[Flag stats for genome mapping](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/main/Ref-based_flagstats.txt)
