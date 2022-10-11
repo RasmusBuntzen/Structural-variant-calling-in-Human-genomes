@@ -1,4 +1,4 @@
-#Thesis
+# Thesis
 [Rasmus Alex Buntzen-Christensen Bachelor thesis](https://github.com/RasmusBuntzen/Structural-variant-calling-in-Human-genomes/blob/05febeb1ff088ec2a0940656f32572f094909129/Bachelor_thesis_Buntzen_Christensen__Rasmus.pdf)
 # Structural variant calling in Human genomes
 Supplementary data for Rasmus Alex Buntzen-Christensens' Bachelor in Biology, University of Copenhagen, June 17th 2022
